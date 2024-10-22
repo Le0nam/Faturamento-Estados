@@ -21,14 +21,12 @@ namespace Faturamento
                     new Estado("Outros", 19849.53)
                 };
 
-                // Passo 2: Calculando o total de faturamento
                 double faturamentoTotal = 0;
                 foreach (var estado in estados)
                 {
                     faturamentoTotal += estado.Faturamento;
                 }
 
-                // Passo 3: Calculando e exibindo o percentual para cada estado
                 Console.WriteLine("Percentuais de Faturamento:");
                 foreach (var estado in estados)
                 {
